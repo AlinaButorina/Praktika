@@ -1,2 +1,7 @@
-user_name = input("Enter your name: ")
-print("Length for your name is ", len(user_name))
+def get_name_length():
+    name = input("Введите имя: ")
+    name_length = len(name)
+    print(f"Длина имени {name}: {name_length}")
+
+
+get_name_length()
