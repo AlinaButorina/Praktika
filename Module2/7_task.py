@@ -7,12 +7,9 @@ def sum_number():
             print("Ошибка: введите число!")
             continue
         num = int(user_input)
-        # если число отрицательное, то завершаем программу
         if num >= 0:
             break
         sum += num
-
-    # выводим результат
     print("Сумма чисел:", sum)
 
 
