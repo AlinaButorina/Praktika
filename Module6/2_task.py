@@ -9,7 +9,7 @@ class SteamSpider(scrapy.Spider):
     game_count = 0
 
     def parse(self, response):
-        num_pages = 99
+        num_pages = 45
         for page_num in range(1, num_pages + 1):
             url = f"https://store.steampowered.com/search/?filter=topsellers&page={page_num}"
             if self.game_count < 1000:
